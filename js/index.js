@@ -8,28 +8,28 @@
         firstName: "Smart Glass",
         name: "Smart Glass 远程专家指导平台",
         text: "",
-        img: "./imgs/r1.png",
+        img: "https://cyc-save.oss-cn-shanghai.aliyuncs.com/bike/imgs/r1.png",
       },
       {
         id: 2,
         firstName: "制造业",
         name: "制造业解决方案",
         text: "ERP作为一个高度集成的信息系统，为企业内部架起了信息沟通的桥梁，充分整合了企业资源，从根本上解决了信息孤岛现象，改善了业务流程，使企业在市场竞争中获得优势。在",
-        img: "./imgs/r2.png",
+        img: "https://cyc-save.oss-cn-shanghai.aliyuncs.com/bike/imgs/r2.png",
       },
       {
         id: 3,
         firstName: "汽车行业",
         name: "汽车行业解决方案",
         text: "汽车制造厂RFID项目设计的规律，结合制造企业物料拉动的具体特点，确定了系统规划设计的几大原则： 先进性：本项目提供的RFID相关设备选用了全球最新技术。 成熟性：RFID相关设备成功运用于全球多大项目。 开放性：设备提供原厂的SDK及API,方便开发者调用。",
-        img: "./imgs/r3.png",
+        img: "https://cyc-save.oss-cn-shanghai.aliyuncs.com/bike/imgs/r3.png",
       },
       {
         id: 4,
         firstName: "医疗行业",
         name: "医疗行业解决方案",
         text: "条码在医疗行业的应用主要有：病房管理、病历管理、诊断和处方管理、化验管理和药品管理等几个主要部分，医院信息管理系统分为：移动查房子系统、移动护理子系统、药品管理",
-        img: "./imgs/r4.png",
+        img: "https://cyc-save.oss-cn-shanghai.aliyuncs.com/bike/imgs/r4.png",
       },
     ];
     this.initPageText = () => {
@@ -77,7 +77,7 @@
         <div class="app-item-row dd-pointer">
         <div class="modal-hover">
           <div class="modal-bg">
-            <img src="./imgs/number/num-${item.img.replace(
+            <img src="https://cyc-save.oss-cn-shanghai.aliyuncs.com/bike/imgs/number/num-${item.img.replace(
               ".png",
               "-active.png"
             )}" class="dd-img-cover dd-img-contain num" alt="" />
@@ -88,9 +88,9 @@
           </div>
         </div>
         <div class="filter message">
-          <img src="./imgs/${item.img}" class="dd-img-cover app-img" alt="" />
+          <img src="https://cyc-save.oss-cn-shanghai.aliyuncs.com/bike/imgs/${item.img}" class="dd-img-cover app-img" alt="" />
           <div class="img-desc">
-            <img src="./imgs/number/num-${
+            <img src="https://cyc-save.oss-cn-shanghai.aliyuncs.com/bike/imgs/number/num-${
               item.img
             }" class="dd-img-cover dd-img-contain num" alt="" />
             <div class="num-text">${item.name}</div>
