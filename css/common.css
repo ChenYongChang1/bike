@@ -1,0 +1,130 @@
+/* 蓝湖 */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.justify-start {
+  display: flex;
+  justify-content: flex-start;
+}
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.justify-end {
+  display: flex;
+  justify-content: flex-end;
+}
+.justify-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+.justify-around {
+  display: flex;
+  justify-content: space-around;
+}
+.justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+.align-start {
+  display: flex;
+  align-items: flex-start;
+}
+.align-center {
+  display: flex;
+  align-items: center;
+}
+.align-end {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* 蓝湖 */
+
+.font-10 {
+  -webkit-transform: scale(0.83, 0.83);
+  font-size: 12px;
+  transform: scale(0.83, 0.83);
+  display: inline-block;
+}
+
+.dd-pointer {
+  cursor: pointer;
+}
+
+.dd-flex {
+  display: flex;
+}
+
+.dd-flex-1 {
+  flex: 1;
+}
+.dd-flex-space {
+  justify-content: space-between;
+}
+
+.dd-flex-center {
+  justify-content: center;
+}
+
+.dd-align-center {
+  align-items: center;
+}
+
+.dd-flex-shrink {
+  flex-shrink: 0;
+}
+
+.dd-align-start {
+  align-items: flex-start;
+}
+
+.dd-align-end {
+  align-items: end;
+}
+
+.dd-flex-column {
+  flex-direction: column;
+}
+
+.dd-flex-warp {
+  flex-wrap: wrap;
+}
+
+.dd-img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dd-img-contain {
+  object-fit: contain;
+}
+
+.dd-text-center {
+  text-align: center;
+}
+
+.dd-animation-item {
+  display: inline-block;
+  transform: translateY(110%);
+  overflow: hidden;
+  opacity: 0;
+  transition: transform 0.5s cubic-bezier(0.39, 0.575, 0.565, 1),
+    opacity 0.3s cubic-bezier(0.67, 0.19, 0.94, 0.81);
+}
+
+.dd-animation-active .dd-animation-item {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.dd-margin {
+  margin: auto;
+}

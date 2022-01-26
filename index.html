@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+
+  <link rel="stylesheet" href="https://cyc-save.oss-cn-shanghai.aliyuncs.com/bike/modules/css/animate.min.css">
+  <script src="https://cyc-save.oss-cn-shanghai.aliyuncs.com/bike/modules/js/wow.min.js"></script>
+  <script src="https://cyc-save.oss-cn-shanghai.aliyuncs.com/bike/modules/js/jquery-1.11.3.min.js"></script>
+  <script src="https://cyc-save.oss-cn-shanghai.aliyuncs.com/bike/modules/js/count.js"></script>
+  <script src="./js/chartData.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.2.2/echarts.min.js"></script>
+  <script src="https://cyc-save.oss-cn-shanghai.aliyuncs.com/bike/modules/js/china.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <div class="header">
+      <div class="header-inner dd-flex dd-flex-space dd-align-center">
+        <div class="logo dd-flex dd-align-center">
+          <div class="logo-img">
+            <img src="./imgs/logo.png" class="dd-img-contain dd-img-cover" alt="" />
+          </div>
+          <div class="logo-name">
+            <p class="cn-name">上海比科翱商贸发展有限公司</p>
+            <p class="en-name font-10">
+              SHANGHAI BECORE TRANDING DEVELOPMENT LTD.
+            </p>
+          </div>
+        </div>
+        <div class="dd-flex dd-flex-end">
+          <div class="common-item dd-pointer">关于我们</div>
+          <div class="common-item dd-pointer">解决方案</div>
+          <div class="common-item dd-pointer">产品中心</div>
+          <div class="common-item dd-pointer">联系我们</div>
+        </div>
+      </div>
+    </div>
+    <div class="banner">
+      <img class="dd-img-cover banner-img"
+        src="https://cyc-save.oss-cn-shanghai.aliyuncs.com/cyc-save/16431067717470.42979964215054745.png" alt="" />
+      <div class="banner-text dd-animation-box">
+        <p class="banner-title dd-animation-show" data="Software"></p>
+        <p class="banner-title dd-animation-show" data="Service"></p>
+        <p class="banner-title dd-animation-show" data="IOT System Integration"></p>
+        <p class="banner-title banner-font dd-animation-show" data="为企业客户提供物联网信息化整体解决方案"></p>
+        <p class="banner-desc-text dd-animation-show" data="集系统软件开发、硬件化配套整合、耗材定制生产于一体的自动化管理系统"></p>
+        <button class="banner-video dd-animation-show dd-text-center dd-flex dd-flex-center dd-align-center"
+          data="观看视频">
+          <img src="./imgs/icon/video.png" class="icon-img" alt="">
+        </button>
+      </div>
+    </div>
+    <div class="company">
+      <div class="company-title dd-flex dd-align-center dd-flex-column dd-text-center">
+        <p class="en-company">COMPANY</p>
+        <p class="next-title">公司介绍</p>
+      </div>
+      <div class="desc-font">
+        上海比科翺商贸发展有限公司成立于2000年，是中国智慧城市领军企业。公司以行业应用软件(
+        Software )、专业IT服务( Service )和系统集成( System Integration
+        )作为三大主营业务，为智慧城市提供整体解决方案。同时，上海比科翺商贸发展有限公司在自动识别行业AutoID和RFID技术领域有专业的解决方案，是集系统软件开发、硬件配套整合、耗材定制生产于一体的自动化管理系统的集成商。
+      </div>
+      <div class="card-text dd-flex dd-flex-space">
+        <div class="dd-flex-1 wow fadeInLeft" data-wow-duration="0.25s" data-wow-delay="0.1s">
+          <div class="card-title">
+            <div class="card-title-text dd-flex dd-flex-center dd-align-center">
+              综合型企业
+            </div>
+            <div class="card-desc-text dd-text-center">
+              提供所有Becore集团产品的销售与售前售后服务
+            </div>
+          </div>
+          <div class="dd-flex dd-flex-center">
+            <div class="num-text margin-num">
+              <div class="num-title dd-text-center"><span id="banshi2" class="dd-num-scroll" end="17"
+                  start="0">17</span>个</div>
+              <div class="num-desc dd-flex dd-flex-center">办事处</div>
+            </div>
+            <div class="num-text">
+              <div class="num-title dd-text-center"><span id="g1ongchang1" class="dd-num-scroll" end="4"
+                  start="0">4</span>家</div>
+              <div class="num-desc dd-flex dd-flex-center">独立工厂</div>
+            </div>
+          </div>
+        </div>
+        <div class="dd-flex-1 wow fadeInRight" data-wow-duration="0.25s" data-wow-delay="0.15s">
+          <div class="card-title">
+            <div class="card-title-text dd-flex dd-flex-center dd-align-center">
+              共享型企业
+            </div>
+            <div class="card-desc-text dd-text-center">
+              自主设计、生产、销售各类RFID标签、碳带等耗材
+            </div>
+          </div>
+          <div class="dd-flex dd-flex-center">
+            <div class="num-text margin-num">
+              <div class="num-title dd-text-center"><span id="banshi" class="dd-num-scroll" end="200"
+                  start="0">200</span>个</div>
+              <div class="num-desc dd-flex dd-flex-center">销售团队</div>
+            </div>
+            <div class="num-text">
+              <div class="num-title dd-text-center"><span id="gongchang1" class="dd-num-scroll" end="500"
+                  start="0">500</span>家</div>
+              <div class="num-desc dd-flex dd-flex-center">制造团队</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="echarts wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.1s">
+      <div class="chart"></div>
+      <div class="chart-text dd-margin">
+        <p class="chart-font">交付及时率 ≥ 95%</p>
+        <p class="chart-font">用户满意度 ≥ 95%</p>
+        <p class="search-button dd-pointer dd-text-center dd-flex dd-flex-center dd-align-center"><img
+            src="./imgs/icon/address.png" class="icon-img" alt="">查询办事处</p>
+      </div>
+    </div>
+    <div class="company solution wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.1s">
+      <div class="company-title dd-flex dd-align-center dd-flex-column dd-text-center">
+        <p class="en-company">SOLUTION</p>
+        <p class="next-title">解决方案</p>
+      </div>
+      <div class="desc-font dd-text-center">
+        解决方案涵盖从标签设计，标签打印到数据采集，语音，定位系统完整IOT应用
+      </div>
+      <!-- 轮播图 -->
+      <div class="banner-swiper dd-flex">
+        <div class="swiper-nav">
+          <!-- <div class="swiper-item dd-flex dd-align-center">
+            <div class="nav-item-animation-circle"></div>
+            <div class="transition-opacity-bg"></div>
+            <div class="swiper-font dd-text-center">Smart Glass</div>
+          </div>
+          <div class="swiper-item dd-flex dd-align-center">
+            <div class="nav-item-animation-circle"></div>
+            <div class="transition-opacity-bg"></div>
+            <div class="swiper-font dd-text-center">制造业</div>
+          </div>
+          <div class="swiper-item dd-flex dd-align-center">
+            <div class="nav-item-animation-circle"></div>
+            <div class="transition-opacity-bg"></div>
+            <div class="swiper-font dd-text-center">汽车行业</div>
+          </div>
+          <div class="swiper-item dd-flex dd-align-center">
+            <div class="nav-item-animation-circle"></div>
+            <div class="transition-opacity-bg"></div>
+            <div class="swiper-font dd-text-center">医疗行业</div>
+          </div> -->
+        </div>
+        <div class="swiper-body">
+          <!-- <div class="swiper-title">Smart Glass 远程专家指导平台</div>
+          <div class="swiper-text">ERP作为一个高度集成的信息系统，为企业内部架起了信息沟通的桥梁，充分整合了企业资源，从根本上解决了信息孤岛现象，改善了业务流程，使企业在市场竞争中获得优势。在
+          </div>
+          <div class="swiper-more">了解更多</div>
+          <div class="swiper-img">
+            <img src="https://cyc-save.oss-cn-shanghai.aliyuncs.com/cyc-save/16431199068400.7644840362011784.png" class="dd-img-cover" alt="">
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="vip-serve wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.1s">
+      <div class="vip-title dd-text-center">
+        快速周全的服务响应真诚地服务每一位客户
+      </div>
+      <div class="vip-title-h1 dd-text-center">
+        为制造行业的终端用户提供适宜的解决方案
+      </div>
+      <div class="vip-desc-text dd-margin dd-text-center">
+        满足客户对于自动识别装备能够迅速而精准地采集数据并纳入公司内部数据系统的要求。
+      </div>
+      <div class="vip-more-box dd-margin">
+        <img src="./imgs/mov.gif" class="dd-img-cover dd-img-contain" alt="">
+      </div>
+    </div>
+    <div class="app-list dd-flex wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.1s">
+    </div>
+
+    <div class="yj-pt wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.1s">
+      <div class="yj-title dd-text-center">硬件配套</div>
+      <div class="yj-desc-text dd-margin dd-text-center">
+        上海比科翺商贸发展有限公司，成立于2000年，是家多年从事条码自动识别技术应用的专业公司，总部设立于上海，在苏州，杭州，北京，重庆等地共设有17个办事处，是中国条码应用领域的佼佼者，在条码应用方面拥有雄厚的技术实力和丰富的专业经验。比科翱公司是国际著名条码硬件品牌Honeywell等产品与服务的白金级授权代理。
+      </div>
+      <img src="./imgs/yj-img.png" class="yj-img dd-img-cover" alt="">
+      <div class="yj-china dd-text-center">中国区最高级别代理</div>
+      <div class="line"></div>
+      <div class="img-price">
+        <img src="./imgs/price.png" class="dd-img-cover" alt="">
+      </div>
+      <div class="price-text dd-text-center">战略解决方案合作伙伴</div>
+      <div class="text-img">
+        <img src="./imgs/text-img.png" class="dd-img-cover" alt="">
+      </div>
+      <div class="production dd-text-center dd-flex dd-flex-center dd-align-center"><img
+          src="./imgs/icon/production.png" class="icon-img" alt="">产品中心</div>
+    </div>
+
+    <div class="footer">
+      <div class="box11">
+        <div class="wrap2 dd-margin flex-row">
+          <div class="group7">
+            <div class="mod2 flex-col"></div>
+            <span class="word23">联系我们</span>
+            <span class="word21">021-69000571</span>
+            <span class="paragraph1">
+              ©2018-2022【上海比科翱商贸发展有限公司】&nbsp;
+              <br />
+              All&nbsp;rights&nbsp;reserved
+              <br />
+              沪ICP备17038544号-1
+            </span>
+          </div>
+          <div class="group8 flex-col justify-between">
+            <span class="word22">关于我们</span>
+            <span class="infoBox1">
+              公司介绍
+              <br />
+              公司文化
+              <br />
+              公司优势
+              <br />
+              合作伙伴
+            </span>
+          </div>
+          <div class="group9 flex-col justify-between">
+            <span class="info12">产品中心</span>
+            <span class="paragraph2">
+              条码打印机
+              <br />
+              数据采集类设备
+              <br />
+              RFID硬件类设备
+              <br />
+              多元化方案硬件设备
+              <br />
+              定制化耗材
+            </span>
+          </div>
+          <div class="group10 flex-col justify-between">
+            <span class="txt16">解决方案</span>
+            <span class="paragraph3">
+              智造业解决方案
+              <br />
+              汽车行业解决方案
+              <br />
+              医疗行业解决方案
+              <br />
+              零售行业解决方案
+              <br />
+              RFID解决方案
+              <br />
+              远程专家解决方案
+              <br />
+              语音拣选解决方案
+            </span>
+          </div>
+          <div class="group11 flex-col justify-between">
+            <span class="txt17">支持中心</span>
+            <span class="paragraph4">
+              服务项目
+              <br />
+              售后支持
+              <br />
+              服务保修
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/index.js"></script>
+  <!-- Swiper JS -->
+  <!-- Initialize Swiper -->
+  <script></script>
+</body>
+
+</html>
