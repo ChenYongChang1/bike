@@ -129,10 +129,20 @@
   position: relative;
   overflow: hidden;
 }
+.modal-filter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 87, 190, 0.4);
+  z-index: 1;
+}
 .banner-img {
   position: relative;
   z-index: 0;
   animation: bg-become-big 10s linear 0.1s infinite normal both;
+  z-index: 0;
 }
 .banner .banner-text {
   position: absolute;
@@ -143,6 +153,7 @@
   z-index: 1;
   font-size: 44px;
   color: var(--white);
+  z-index: 2;
 }
 .banner-title {
   margin-bottom: 40px;
@@ -454,7 +465,8 @@
   bottom: 49px;
   width: 152px;
   height: 152px;
-  background: url(https://cyc-save.oss-cn-shanghai.aliyuncs.com/bike/imgs/nav-icon.png) no-repeat 0 0 / cover;
+  background: url(https://cyc-save.oss-cn-shanghai.aliyuncs.com/bike/imgs/nav-icon.png)
+    no-repeat 0 0 / cover;
   -webkit-animation: circle-rotate-in 1s cubic-bezier(0, 0, 0, 1) 0.1s 1 normal
     both;
   animation: circle-rotate-in 1s cubic-bezier(0, 0, 0, 1) 0.1s 1 normal both;
@@ -628,7 +640,8 @@
 .mod2 {
   width: 163px;
   height: 163px;
-  background: url(https://cyc-save.oss-cn-shanghai.aliyuncs.com/bike/imgs/code.png) 0px 0px no-repeat;
+  background: url(https://cyc-save.oss-cn-shanghai.aliyuncs.com/bike/imgs/code.png)
+    0px 0px no-repeat;
 }
 
 .word21 {
