@@ -183,7 +183,7 @@
   border-radius: 25px;
   background: rgba(0, 0, 0, 0);
   color: var(--white);
-  box-shadow: 3px 5px 13px 0px rgba(0, 72, 158, 0.4);
+  box-shadow: 3px 5px 13px 0px rgba(0, 72, 158, 0.6);
   border: none;
 }
 
