@@ -24,8 +24,7 @@
       <div class="header-inner dd-flex dd-flex-space dd-align-center">
         <div class="logo dd-flex dd-align-center">
           <div class="logo-img">
-            <img src="./imgs/logo.png"
-              class="dd-img-contain dd-img-cover" alt="" />
+            <img src="./imgs/logo.png" class="dd-img-contain dd-img-cover" alt="" />
           </div>
           <div class="logo-name">
             <p class="cn-name">上海比科翱商贸发展有限公司</p>
@@ -44,8 +43,12 @@
     </div>
     <div class="banner">
       <div class="modal-filter"></div>
-      <img class="dd-img-cover banner-img"
-        src="https://cyc-save.oss-cn-shanghai.aliyuncs.com/cyc-save/16431067717470.42979964215054745.png" alt="" />
+      <!-- <video src="./imgs/media.mp4"></video> -->
+      <video autoplay="autoplay" muted="ismute">
+        <source src="./imgs/media.mp4" />
+      </video>
+      <!-- <img class="dd-img-cover banner-img"
+        src="https://cyc-save.oss-cn-shanghai.aliyuncs.com/cyc-save/16431067717470.42979964215054745.png" alt="" /> -->
       <div class="banner-text dd-animation-box">
         <p class="banner-title dd-animation-show" data="Software"></p>
         <p class="banner-title dd-animation-show" data="Service"></p>
@@ -132,11 +135,11 @@
         <p class="en-company">SOLUTION</p>
         <p class="next-title">解决方案</p>
       </div>
-      <div class="desc-font dd-text-center">
+      <div class="desc-font dd-text-center" style="margin-bottom: 0">
         解决方案涵盖从标签设计，标签打印到数据采集，语音，定位系统完整IOT应用
       </div>
       <!-- 轮播图 -->
-      <div class="banner-swiper dd-flex">
+      <div class="banner-swiper dd-flex" style="display: none">
         <div class="swiper-nav">
           <!-- <div class="swiper-item dd-flex dd-align-center">
             <div class="nav-item-animation-circle"></div>
@@ -169,6 +172,27 @@
           </div> -->
         </div>
       </div>
+      <div class="swiper-resolve">
+        <div class="swiper-inner">
+          <div class="swiper-head-r dd-flex dd-flex-center">
+            <div class="swiper-head-item dd-pointer" data="1" onmouseover="changeIndex(1)">智慧门店</div>
+            <div class="swiper-head-item dd-pointer" data="2" onmouseover="changeIndex(2)">智慧门店</div>
+            <div class="swiper-head-item dd-pointer" data="3" onmouseover="changeIndex(3)">智慧门店</div>
+            <div class="swiper-head-item dd-pointer" data="4" onmouseover="changeIndex(4)">智慧门店</div>
+          </div>
+          <div class="swiper-body-r dd-flex dd-flex-space">
+            <div class="left-text">
+              在仓储物流领域，采用RFID技术实现批量群读，能够全面提升仓库收货、盘点、出库复核、货品定位、库位管理等业务效率，极大地提升了仓库库位的利用率，有效降低了人力成本。
+              RFID技术在数据采集上准确性高，最终实现数据的高度可视化，帮助仓库运营者了解当前的运营状态
+            </div>
+            <div class="right-img">
+              <img
+                src="http://www.inlaylink.com/cn/wp-content/uploads/2020/09/%E8%B5%84%E4%BA%A7%E7%AE%A1%E7%90%86%E9%85%8D%E5%9B%BE-1-2.jpg"
+                class="dd-img-cover" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="vip-serve wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.1s">
@@ -182,8 +206,7 @@
         满足客户对于自动识别装备能够迅速而精准地采集数据并纳入公司内部数据系统的要求。
       </div>
       <div class="vip-more-box dd-margin">
-        <img src="./imgs/mov.gif" class="dd-img-cover dd-img-contain"
-          alt="">
+        <img src="./imgs/mov.gif" class="dd-img-cover dd-img-contain" alt="">
       </div>
     </div>
     <div class="app-list dd-flex wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.1s">

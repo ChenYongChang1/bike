@@ -49,27 +49,27 @@
       const applitionList = [
         {
           img: "one.png",
-          icon: './imgs/1.png',
+          icon: "./imgs/1.png",
           name: "平板电脑  L10 系列",
           title:
             "实时高效获取榜单提升较快、市场下载和收入飙升、特定开发者新品趋势、品类新产品提醒",
         },
         {
           img: "two.png",
-          icon: './imgs/2.png',
+          icon: "./imgs/2.png",
           name: "PX940 工业打印机",
           title: "通过各种数据榜单报表研究，发现新的市场机会",
         },
         {
           img: "three.png",
-          icon: './imgs/3.png',
+          icon: "./imgs/3.png",
           name: "ZT600 工业打印机",
           title:
             "对接各大应用市场，应用评分、评论内容。通过评论主题、星级、版本、设备，提炼核心反馈，指导产品科学决策",
         },
         {
           img: "four.png",
-          icon: './imgs/4.png',
+          icon: "./imgs/4.png",
           name: "关键词覆盖分析",
           title:
             "对接应用覆盖关键词总数、TOP3、TOP10覆盖情况，对核心关键词排名进行高频监控，异常变动及时提醒",
@@ -89,9 +89,7 @@
           </div>
         </div>
         <div class="filter message">
-          <img src="https://cyc-save.oss-cn-shanghai.aliyuncs.com/bike/imgs/${
-            item.img
-          }" class="dd-img-cover app-img" alt="" />
+          <img src="https://cyc-save.oss-cn-shanghai.aliyuncs.com/bike/imgs/${item.img}" class="dd-img-cover app-img" alt="" />
           <div class="img-desc">
             <img src="${item.icon}" class="dd-img-cover dd-img-contain num" alt="" />
             <div class="num-text">${item.name}</div>
@@ -225,16 +223,40 @@
         d.querySelector(".swiper-img img").style.transform = "scale(1)";
       }, 100);
     };
+    this.initSwiper2 = () => {
+      const all = document.querySelectorAll(".swiper-head-item");
+      for (const i of all) {
+        if (i.getAttribute("data") == this.indexId) {
+          i.classList.add("active");
+        } else {
+          i.setAttribute("class", "swiper-head-item dd-pointer");
+        }
+      }
+      // .classList.add("active");
+      const row = list.find((item) => item.id === this.indexId);
+      const swiperBody = d.querySelector(".swiper-body-r");
+      swiperBody.innerHTML = `
+      <div class="left-text wow fadeInUp" data-wow-duration="0.5s">
+      ${row.text}
+    </div>
+    <div class="right-img wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">
+      <img src="${row.img}" class="dd-img-cover" alt="">
+    </div>
+      `;
+    };
   }
   const index = new Index();
   index.initPageText();
   index.initEcharts();
   index.renderPage();
-  index.initSwiper();
+  // 一开始的轮播图
+  // index.initSwiper();
+  index.initSwiper2();
   w.changeIndex = (i) => {
     if (index.indexId !== i) {
       index.indexId = i;
-      index.initSwiper();
+      // index.initSwiper();
+      index.initSwiper2();
       return false;
     }
   };
@@ -257,10 +279,11 @@
         setTimeout(() => {
           index.numberScroll({ id: item.getAttribute("id") });
         }, 700);
-        allScrollNumber[i] = "";
+        item.setAttribute("stop", "");
+      } else {
+        item.setAttribute("stop", true);
       }
     }
-
     index.handleScroll();
   });
   // index.numberScroll({className: 'dd-num-scroll'});
