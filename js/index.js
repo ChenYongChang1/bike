@@ -236,10 +236,10 @@
       const row = list.find((item) => item.id === this.indexId);
       const swiperBody = d.querySelector(".swiper-body-r");
       swiperBody.innerHTML = `
-      <div class="left-text wow fadeInUp" data-wow-duration="0.5s">
+      <div class="left-text wow rollIn" data-wow-duration="0.5s">
       ${row.text}
     </div>
-    <div class="right-img wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.2s">
+    <div class="right-img wow bounceInRight" data-wow-duration="0.5s" data-wow-delay="0.2s">
       <img src="${row.img}" class="dd-img-cover" alt="">
     </div>
       `;
