@@ -260,6 +260,17 @@
       return false;
     }
   };
+  w.videoStatusChang = (flag) => {
+    const video = d.querySelector(".video");
+    console.log(video.currentTime);
+    //false 点击了播放  true 点击了暂停
+    console.log(video.paused);
+    if(video.paused){
+      video.play()
+    }else{
+      video.pause()
+    }
+  };
   const allScrollNumber = index.getAllScrollNumber();
   w.onload = () => {
     new WOW({
