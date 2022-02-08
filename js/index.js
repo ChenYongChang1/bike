@@ -50,27 +50,27 @@
         {
           img: "one.png",
           icon: "./imgs/1.png",
-          name: "平板电脑  L10 系列",
+          name: "数字化标识",
           title:
             "实时高效获取榜单提升较快、市场下载和收入飙升、特定开发者新品趋势、品类新产品提醒",
         },
         {
           img: "two.png",
           icon: "./imgs/2.png",
-          name: "PX940 工业打印机",
+          name: "智能IOT硬件",
           title: "通过各种数据榜单报表研究，发现新的市场机会",
         },
         {
           img: "three.png",
           icon: "./imgs/3.png",
-          name: "ZT600 工业打印机",
+          name: "IOT软件及平台",
           title:
             "对接各大应用市场，应用评分、评论内容。通过评论主题、星级、版本、设备，提炼核心反馈，指导产品科学决策",
         },
         {
           img: "four.png",
           icon: "./imgs/4.png",
-          name: "关键词覆盖分析",
+          name: "专业的服务与支持",
           title:
             "对接应用覆盖关键词总数、TOP3、TOP10覆盖情况，对核心关键词排名进行高频监控，异常变动及时提醒",
         },
