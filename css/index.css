@@ -235,7 +235,7 @@
 .card-text {
   width: var(--content-width);
   margin: auto;
-  padding-bottom: 54px;
+  padding-bottom: 24px;
 }
 
 .card-title-text {
@@ -435,7 +435,7 @@
   /* background: #f7f8f9; */
   background: white;
   margin-top: 0;
-  padding: 58px 0 70px 0;
+  padding: 18px 0 70px 0;
 }
 
 .banner-swiper {
